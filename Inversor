@@ -1,0 +1,30 @@
+package inversorpalavras;
+
+import java.util.Scanner;
+
+public class InversorPalavras {
+    public static void main(String[] args) {
+        Scanner palavra = new Scanner(System.in);
+        System.out.print("Digite uma palavra: ");
+        String pa = palavra.nextLine();	
+        
+        
+        String pal = pa;
+		System.out.println(pal);
+	char[] ca = pal.toCharArray();
+	    int inicio = 0;
+	    int fim = ca.length-1;
+            char temp;
+            
+	    while(fim > inicio){
+	        temp = ca[inicio];
+	        ca[inicio] = ca[fim];
+	        ca[fim] = temp;
+	        fim--;
+	        inicio++;
+	    }
+	    pal = new String(ca);
+	    System.out.println(pal);
+            
+    }
+}
