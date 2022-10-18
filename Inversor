@@ -25,6 +25,7 @@ public class InversorPalavras {
 	    }
 	    pal = new String(ca);
 	    System.out.println(pal);
+		
             
     }
 }
